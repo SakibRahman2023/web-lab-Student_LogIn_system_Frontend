@@ -74,7 +74,7 @@ My Profile</NavLink></li>
                                 src={user.photoURL}
                             />
                         </div>
-                        <button onClick={handleLogOut} className="border-2 py-0.5 px-2 font-bold text-lg border-orange-500 rounded-xl">Log out</button>
+                        <button onClick={handleLogOut} className="border-2 py-0.5 px-1 font-bold md:text-lg text-sm  rounded-xl">Log out</button>
                     </>
                 ) : (
                     <Link to="/login">

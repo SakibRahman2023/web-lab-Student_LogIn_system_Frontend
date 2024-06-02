@@ -13,9 +13,9 @@ const Cse = () => {
     },[])
     return (
         <div className="bg-stone-100">
-            <div className="flex">
+            <div className="flex  ">
                 <p><span className="bg-orange-600 pl-3 pr-2 py-1 text-2xl font-bold text-white">Notice</span></p>
-                <p> <Notice></Notice></p>
+                <p className=""> <Notice></Notice></p>
             </div>
             <p className="text-center  font-bold text-3xl pt-20 "><span className="bg-black text-white px-3 py-1 rounded-l-2xl">Faculty</span> <span className="bg-orange-600 text-white px-3 py-1 rounded-r-2xl -ml-2">Members</span></p>
            
