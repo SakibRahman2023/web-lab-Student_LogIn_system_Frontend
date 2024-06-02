@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { Link, NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { FaHome, FaRegAddressBook } from "react-icons/fa";
-import { RiAccountPinCircleLine } from "react-icons/ri";
+import { RiAccountPinCircleLine, RiDashboardFill } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 
 const Navbar1 = () => {
@@ -40,9 +40,18 @@ const Navbar1 = () => {
                 </ul>
             </li>
             {user && (
-                <li className="font-semibold"><NavLink to="/profile"><CgProfile className="-mr-1"/>
-My Profile</NavLink></li>
-            )}
+                
+                    user.email === "admin@gmail.com"?(
+                    <>
+                        
+                        <li className="font-semibold"><NavLink to="/dashboard"><RiDashboardFill className="-mr-1" />
+                            Dashboard</NavLink></li>
+                    </>
+    ) : (
+                        <li className="font-semibold"><NavLink to="/profile"><CgProfile className="-mr-1" />
+                            My Profile</NavLink></li>
+    )
+   )}
         </>
     );
 

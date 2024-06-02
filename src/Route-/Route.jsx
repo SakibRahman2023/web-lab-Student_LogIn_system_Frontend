@@ -6,6 +6,8 @@ import Login from "../components-/Login";
 import AboutRmstu from "../components-/AboutRmstu";
 import Cse from "../components-/Cse";
 import MyProfile from "../components-/MyProfile";
+import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../components-/Dashboard";
 
 
 
@@ -41,7 +43,11 @@ const router = createBrowserRouter([
             },
             {
                 path:'/profile',
-                element:<MyProfile></MyProfile>
+                element:<PrivateRoute><MyProfile></MyProfile></PrivateRoute>
+            },
+            {
+                path:'/dashboard',
+                element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>
             }
         ]
     }
