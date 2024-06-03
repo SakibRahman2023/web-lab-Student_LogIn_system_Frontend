@@ -45,7 +45,7 @@ const Navbar1 = () => {
                     <>
                         
                         <li className="font-semibold"><NavLink to="/dashboard"><RiDashboardFill className="-mr-1" />
-                            Dashboard</NavLink></li>
+                            Admin</NavLink></li>
                     </>
     ) : (
                         <li className="font-semibold"><NavLink to="/profile"><CgProfile className="-mr-1" />

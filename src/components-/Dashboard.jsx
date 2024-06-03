@@ -29,7 +29,7 @@ const Dashboard = () => {
 
         // send data to the server
 
-        fetch('https://student-login-server-kp49efpdl-sakibrahman2023s-projects.vercel.app/StudentResult', {
+        fetch('https://student-login-server.vercel.app/StudentResult', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
