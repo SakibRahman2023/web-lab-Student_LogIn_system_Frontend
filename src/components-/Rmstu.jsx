@@ -18,7 +18,7 @@ const Rmstu = () => {
                     </h3>
                 </div>
                 <div className="navbar-end">
-                    <img className="max-w-[80px] lg:max-w-[200px] lg:pl-10" src={varsityLogo1} alt="Bangobundhu image" />
+                    {/* <img className="max-w-[80px] lg:max-w-[200px] lg:pl-10" src={varsityLogo1} alt="Bangobundhu image" /> */}
                 </div>
             </div>
         </div>
